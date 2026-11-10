@@ -1,0 +1,12 @@
+{
+  "app": "LupinTV",
+  "platform": "android",
+  "version": "1.3.3",
+  "build": 7,
+  "minimumAndroidSdk": 21,
+  "apk": "artifacts/LupinTV-1.3.3.apk",
+  "releaseNotes": [
+    "Sostituito il lettore Android con Media3/ExoPlayer per migliorare la compatibilità dei flussi.",
+    "La riproduzione si apre in verticale; il pulsante Schermo intero ruota il player in orizzontale."
+  ]
+}
