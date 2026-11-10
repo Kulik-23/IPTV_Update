@@ -4,7 +4,7 @@ Player nativo .NET MAUI per Android, Android TV e Windows. Supporta playlist M3U
 
 ## Versione
 
-Release corrente Android: **1.3.4**. Le informazioni della release sono in `update.json`; aggiornalo a ogni nuova release insieme a `ApplicationDisplayVersion`, `ApplicationVersion` (numero build Android), `Version`, `FileVersion` e `InformationalVersion` nel progetto MAUI. Ricostruisci il pacchetto della piattaforma interessata; usa il numero di release nei nomi dei file. Su Android l'app controlla automaticamente il manifest GitHub all'avvio, verifica l'hash SHA-256 e scarica le release più recenti. L'installazione richiede la conferma del programma d'installazione Android e l'autorizzazione per installare app da questa sorgente. Per la prima attivazione, installa la 1.3.4 sopra la versione precedente senza disinstallarla; poi carica APK e `update.json` nella radice di `Kulik-23/IPTV_Update`.
+Release corrente Android: **1.3.5**. Le informazioni della release sono in `update.json`; aggiornalo a ogni nuova release insieme a `ApplicationDisplayVersion`, `ApplicationVersion` (numero build Android), `Version`, `FileVersion` e `InformationalVersion` nel progetto MAUI. Ricostruisci il pacchetto della piattaforma interessata; usa il numero di release nei nomi dei file. Su Android l'app controlla automaticamente il manifest GitHub all'avvio, verifica l'hash SHA-256 e scarica le release più recenti. L'installazione richiede la conferma del programma d'installazione Android e l'autorizzazione per installare app da questa sorgente. Per aggiornare, installa la nuova APK sopra la versione precedente senza disinstallarla; poi carica APK e `update.json` nella radice di `Kulik-23/IPTV_Update`.
 
 ## Funzioni
 
@@ -15,7 +15,7 @@ Release corrente Android: **1.3.4**. Le informazioni della release sono in `upda
 - Password Xtream conservate tramite SecureStorage della piattaforma.
 - Librerie estese caricate nella schermata a pagine; archivio dati su file per evitare i limiti delle Preferenze.
 - Errori imprevisti registrati localmente e mostrati all'avvio successivo, con dettagli tecnici per la diagnosi.
-- Riproduzione Android tramite Media3/ExoPlayer, con supporto ai flussi HLS e controlli audio.
+- Riproduzione Android tramite Media3/ExoPlayer 1.11.1, con supporto ai flussi HLS, fallback del decoder e controlli audio. Android 6.0 (API 23) o successivo è richiesto dalle librerie AndroidX correnti.
 - Il player si apre in verticale; il pulsante **Schermo intero** ruota il video in orizzontale e nasconde le barre di sistema.
 - L'aggiornamento Android controlla `update.json` all'avvio; il manifest deve contenere `app`, `platform`, `packageId`, `version`, `build`, `apk`, `sha256` e `releaseNotes`. Pubblica l'APK all'URL indicato, con la stessa firma della versione installata.
 - Le sezioni Xtream per TV, film e serie vengono caricate separatamente; un errore in una categoria non nasconde le altre.
