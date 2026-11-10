@@ -1,12 +1,15 @@
 {
   "app": "LupinTV",
   "platform": "android",
-  "version": "1.3.3",
-  "build": 7,
+  "packageId": "it.streambox.player",
+  "version": "1.3.4",
+  "build": 8,
   "minimumAndroidSdk": 21,
-  "apk": "artifacts/LupinTV-1.3.3.apk",
+  "apk": "https://raw.githubusercontent.com/Kulik-23/IPTV_Update/main/LupinTV-1.3.4.apk",
+  "sha256": "3A3496F291658F723AF648C7757EEE81FE5BFF50F747E9D59873534021DD53E1",
   "releaseNotes": [
-    "Sostituito il lettore Android con Media3/ExoPlayer per migliorare la compatibilità dei flussi.",
-    "La riproduzione si apre in verticale; il pulsante Schermo intero ruota il player in orizzontale."
+    "Aggiunto il controllo automatico delle nuove release da GitHub; l'installazione richiede la conferma di Android.",
+    "Aggiornata l'icona LupinTV con l'immagine Arsene Lupin fornita.",
+    "Rafforzata la gestione degli errori del lettore per evitare la chiusura dell'app."
   ]
 }
